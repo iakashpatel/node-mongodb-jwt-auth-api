@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "2befa6cc-d0a7-4e8c-b404-ae8b7f9e7d19",
+		"name": "Books API Node JWT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"akash\",\n\t\"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/signin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"akash\",\n\t\"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/book",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTAyZTZjYjE3N2Y5MjAwYTIwYjIxZWEiLCJ1c2VybmFtZSI6ImFrYXNoIiwicGFzc3dvcmQiOiIkMmEkMTAkY3lLYW5pQmtzRXA1Qk5oVDBjNVc1LlZLYmhtWTdycDhmYUN6TzdLRndkLkU2M2xxVVE4TWkiLCJfX3YiOjAsImlhdCI6MTU3NzI0ODUyMywiZXhwIjoxNTc3ODUzMzIzfQ.SPTcrD_ie8fbsyt5Mq9QdPjcrZ0ocpZGCzfk9WIPIlQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/book",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTAyZTZjYjE3N2Y5MjAwYTIwYjIxZWEiLCJ1c2VybmFtZSI6ImFrYXNoIiwicGFzc3dvcmQiOiIkMmEkMTAkY3lLYW5pQmtzRXA1Qk5oVDBjNVc1LlZLYmhtWTdycDhmYUN6TzdLRndkLkU2M2xxVVE4TWkiLCJfX3YiOjAsImlhdCI6MTU3NzI0ODUyMywiZXhwIjoxNTc3ODUzMzIzfQ.SPTcrD_ie8fbsyt5Mq9QdPjcrZ0ocpZGCzfk9WIPIlQ",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"isbn\": \"1234567890\",\n\t\"title\": \"The Richest Man in Babylon\",\n\t\"author\": \"Neil K.\",\n\t\"publisher\": \"new peguin\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/signout",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTAyZTZjYjE3N2Y5MjAwYTIwYjIxZWEiLCJ1c2VybmFtZSI6ImFrYXNoIiwicGFzc3dvcmQiOiIkMmEkMTAkY3lLYW5pQmtzRXA1Qk5oVDBjNVc1LlZLYmhtWTdycDhmYUN6TzdLRndkLkU2M2xxVVE4TWkiLCJfX3YiOjAsImlhdCI6MTU3NzI0ODUyMywiZXhwIjoxNTc3ODUzMzIzfQ.SPTcrD_ie8fbsyt5Mq9QdPjcrZ0ocpZGCzfk9WIPIlQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/signout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"signout"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
