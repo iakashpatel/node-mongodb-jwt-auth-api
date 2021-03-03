@@ -18,7 +18,7 @@
     "morgan": "^1.9.1",
     "passport": "^0.3.2",
     "passport-jwt": "^4.0.0",
-    "pug": "^2.0.4"
+    "pug": "^3.0.1"
   },
   "devDependencies": {
     "constantinople": "^4.0.1"
